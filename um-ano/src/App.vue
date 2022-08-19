@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <header>
+    <header class="header">
       <img src="./assets/logoHeart.png" alt="logoHeart" />
       <nav>
-        <button class="dropdown">
+        <button class="header__btndropdown">
           Nossos Meses :D
           <img src="./assets/iconDown.png" alt="iconDown" />
         </button>
-        <button class="login">Log In</button>
+        <button class="header__btnlogin">Log In</button>
       </nav>
     </header>
     <main>
       <section class="intro">
-        <h1 class="title__intro">
+        <h1 class="intro__title">
           Amor da minha vida, essa simples página é só uma homenagem para
           demonstrar tudo o que já vivemos em somente 1 ano, mas ainda por cima
           mostrar tudo o que
@@ -24,7 +24,7 @@
       </section>
       <section class="subintro">
         <img src="./assets/img1.png" alt="img1" />
-        <p class="subtitle__subintro">
+        <p class="subintro__title">
           Coloquei essa foto, sinceramente porque ficou boa neste estilo da
           página, eu literamente estou escrevendo isso dia 16 de agosto, na
           pressa pra te fazer uma surpresa, então espero que goste meu amor. E
@@ -36,15 +36,15 @@
         <h2>Então Vamos Lá</h2>
         <img src="./assets/smile.png" alt="smile" />
       </section>
-      <section class="earlierAugust">
-        <div class="titleBlueBar">
+      <section class="beforeaugust">
+        <div class="titlebar">
           <h3>Antes de agosto... quando tudo começou</h3>
         </div>
-        <div class="content_earlierAugust">
-          <div class="left__earlierAugust">
+        <div class="beforeaugust__content">
+          <div class="beforeaugust__left">
             <img src="./assets/img2.1.png" alt="imgLeft" />
           </div>
-          <div class="right__earlierAugust">
+          <div class="beforeaugust__right">
             <img src="./assets/img2.2.png" alt="imgRight" />
             <p>
               Bom, aqui é aquela euforia, aquela paixão, que aos poucos vai se
@@ -63,10 +63,10 @@
         <div>
           <h3>Agosto, quando aquele pedido foi feito...</h3>
         </div>
-        <div class="upContent__august">
+        <div class="august__upcontent">
           <img src="./assets/img3.1.png" alt="imgUp" />
         </div>
-        <div class="downContent__august">
+        <div class="august__downcontent">
           <p>
             Nessa foto a direita, foi o parque que eu te pedi em namoro, foi o
             dia que daí em diante eu entendi o que era ter alguem por perto,
@@ -81,17 +81,17 @@
         </div>
       </section>
       <section class="september">
-        <div class="titlePinkBar">
+        <div class="titlebar">
           <h3>Setembro, o primeiro de muitos meses</h3>
         </div>
-        <div class="upContent__september">
+        <div class="september__upcontent">
           <img src="./assets/img4.png" alt="imgUp" />
           <video controls>
             <source src="./assets/vid1.mp4" type="video/mp4" />
             Your browser dows not support the video tag
           </video>
         </div>
-        <div class="downContent__september">
+        <div class="september__downcontent">
           <p>
             Aqui começou a nossa vida de namorados, onde tudo parecia estar
             dando errado, mas um tentava acalmar o outro pra ninguém surtar de
@@ -129,7 +129,7 @@
         </div>
       </section>
       <section class="november">
-        <div class="titleBlueBar">
+        <div class="titlebar">
           <h3>Novembro, e com isso nosso amor aumentava + e +</h3>
         </div>
         <img src="./assets/img6.png" alt="imgs" />
@@ -138,65 +138,13 @@
         <div>
           <h3>Dezembro, essas bubbles tavam boas né? kkkk</h3>
         </div>
-        <div class="downContent__december">
+        <div class="december__downcontent">
           <img src="./assets/img7.png" alt="imgs" />
         </div>
       </section>
-      <section class="january">
-        <div class="titlePinkBar">
-          <h3>Janeiro, e a nossa viagem juntos!</h3>
-        </div>
-        <div class="carousel__january">
-          <div class="titleDay__carouselCard">
-            <h3>Dia 21</h3>
-          </div>
-          <div class="contentBox__carouselCard">
-            <button class="leftButton">
-              <img src="./assets/iconLeftBlue.png" alt="leftButton" />
-            </button>
-            <div class="content">
-              <img src="./assets/img1.png" alt="img" />
-            </div>
-            <button class="rightButton">
-              <img src="./assets/iconRightBlue.png" alt="rightButton" />
-            </button>
-          </div>
-        </div>
-        <div class="carousel__january">
-          <div class="titleDay__carouselCard">
-            <h3>Dia 21</h3>
-          </div>
-          <div class="contentBox__carouselCard">
-            <button class="leftButton">
-              <img src="./assets/iconLeftBlue.png" alt="leftButton" />
-            </button>
-            <div class="content">
-              <img src="./assets/img1.png" alt="img" />
-            </div>
-            <button class="rightButton">
-              <img src="./assets/iconRightBlue.png" alt="rightButton" />
-            </button>
-          </div>
-        </div>
-        <div class="carousel__january">
-          <div class="titleDay__carouselCard">
-            <h3>Dia 21</h3>
-          </div>
-          <div class="contentBox__carouselCard">
-            <button class="leftButton">
-              <img src="./assets/iconLeftBlue.png" alt="leftButton" />
-            </button>
-            <div class="content">
-              <img src="./assets/img1.png" alt="img" />
-            </div>
-            <button class="rightButton">
-              <img src="./assets/iconRightBlue.png" alt="rightButton" />
-            </button>
-          </div>
-        </div>
-      </section>
+      <january-comp />
       <section class="fevMarAprMay">
-        <div class="titleBlueBar">
+        <div class="titlebar">
           <h3>Fevereiro, março, abril, maio: Pouca foto é foda kkkk</h3>
         </div>
         <div>
@@ -219,8 +167,8 @@
         <div>
           <h3>Junho, nossa viagem pra pira :0</h3>
         </div>
-        <div class="content__june">
-          <div class="leftContent__june">
+        <div class="june__content">
+          <div class="june__leftcontent">
             <img src="./assets/img9.1.png" alt="img" />
             <p>
               Pra falar bem a verdade, eu preferi a última viagem, mas eu adorei
@@ -235,13 +183,13 @@
               um casal.
             </p>
           </div>
-          <div class="rightContent_june">
+          <div class="june__rightcontent">
             <img src="./assets/img9.2.png" alt="img" />
           </div>
         </div>
       </section>
       <section class="july">
-        <div class="titleBlueBar">
+        <div class="titlebar">
           <h3>Julho, separados porém só na distância calma amor</h3>
         </div>
         <div>
@@ -258,7 +206,7 @@
           <img src="./assets/img10.png" alt="imgs" />
         </div>
       </section>
-      <section class="heartMaster">
+      <section class="heartmaster">
         <h3>
           Passou um ano inteiro, e nesse meio nós crescemos, melhoramos, nos
           adaptamos, um com a ajuda do outro, mas parece que pssou 5 minutos
@@ -267,15 +215,15 @@
           outro.
         </h3>
       </section>
-      <section class="ourFuture">
+      <section class="ourfuture">
         <div>
-          <h2 class="title__ourFuture">Em breve, juntos</h2>
+          <h2 class="ourfuture__title">Em breve, juntos</h2>
         </div>
         <div>
           <img src="./assets/img12.png" alt="imgs" />
         </div>
         <div>
-          <button class="btn__ourFuture">
+          <button class="ourfuture__btn">
             <h2>NÃO CLIQUE!</h2>
           </button>
         </div>
@@ -289,27 +237,74 @@
 </template>
 
 <script>
-export default {}
+import JanuaryComp from './components/januaryComp.vue'
+
+export default {
+  name: 'App',
+  components: {
+    JanuaryComp
+  }
+}
 </script>
 
-<style>
+<style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@mixin flex {
+  display: flex;
+  justify-content: center; // justify-content: flex-start
+  flex-direction: column; // flex-direction: row
+  align-items: center; // align-items: stretch
+}
+
+@mixin button {
+  height: 6rem;
+  border-style: none;
+  border-radius: var(--border1);
+  font-size: 2.8rem;
+  line-height: 2.4rem;
+}
+
+:root {
+  --size1: 120rem;
+  --size2: 100rem;
+  --size3: 80rem;
+  --font1: 4.5rem;
+  --font2: 2.8rem;
+  --ln-height: 2.4rem;
+  --color1: #10202b;
+  --color2: #ebf2f8;
+  --color3: #d90f0f;
+  --color4: #4a687c;
+  --color5: #fc4444;
+  --color6: #ff9f9f;
+  --padding1: 0rem 4rem 6rem 4rem;
+  --border1: 1.5rem;
+  --border2: 2rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
+  box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Inter', sans-serif;
 }
 
 body {
+  @include flex;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
+
   width: 100vw;
   height: 100vh;
+
   background-image: url('./assets/heart.png'),
     radial-gradient(
       circle,
@@ -319,42 +314,34 @@ body {
     );
   background-repeat: repeat-y, repeat;
   background-position: center 0rem, 0px, 0px;
-  display: flex;
-  justify-content: center;
 }
 
-#app {
-  z-index: 10;
-  width: 120rem;
-  display: flex;
-  flex-direction: column;
-  row-gap: 15rem;
-}
+h1 {
+  width: var(--size2);
+  color: var(--color1);
+  font-size: var(--font1);
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  gap: 5rem;
+  line-height: 4rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 h3 {
-  font-size: 4.5rem;
-  color: #ebf2f8;
-  padding: 3rem 0rem;
+  font-size: var(--font1);
+  color: var(--color2);
 }
 
 p {
-  font-size: 2.8rem;
-  color: #10202b;
+  font-size: var(--font2);
+  color: var(--color1);
+}
+
+span {
+  color: var(--color3);
 }
 
 img {
-  border-radius: 1.5rem;
+  border-radius: var(--border1);
 }
 
 video {
@@ -362,314 +349,252 @@ video {
   height: 60rem;
 }
 
-.dropdown {
-  width: 30rem;
-  height: 6rem;
-  border-style: none;
-  border-radius: 1.5rem;
-  font-size: 2.8rem;
-  line-height: 2.4rem;
-  background: #10202b;
-  color: #ebf2f8;
-}
-
-.dropdown img {
-  margin-left: 1rem;
-}
-
-.login {
-  width: 20rem;
-  height: 6rem;
-  border-style: none;
-  border-radius: 1.5rem;
-  font-size: 2.8rem;
-  line-height: 2.4rem;
-  background: #fc4444;
-  color: #10202b;
-}
-
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex;
   row-gap: 20rem;
 }
 
 section {
-  display: flex;
-  align-items: center;
-}
+  @include flex;
+  border-radius: var(--border2);
+  width: var(--size1);
 
-.title__intro {
-  width: 100rem;
-  font-size: 4rem;
-  line-height: 4rem;
-  color: #10202b;
-  font-weight: 600;
+  row-gap: 10rem;
   text-align: center;
 }
-.title__intro span {
-  color: #d90f0f;
+
+button {
+  box-shadow: 0px 0px 30px rgba(132, 132, 132, 0.2);
 }
 
-.subtitle__subintro {
-  margin-left: 3rem;
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-  color: #10202b;
-  text-align: left;
-  width: 26rem;
+#app {
+  @include flex;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  width: var(--size1);
+
+  z-index: 10;
+  row-gap: 15rem;
+}
+
+.header {
+  @include flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &__btndropdown {
+    @include button;
+
+    background: var(--color1);
+    color: var(--color2);
+
+    width: 30rem;
+    margin-right: 5rem;
+  }
+
+  &__btndropdown img {
+    margin-left: 1rem;
+  }
+
+  &__btnlogin {
+    @include button;
+
+    background: var(--color5);
+    color: var(--color1);
+
+    width: 20rem;
+  }
+}
+
+.subintro {
+  flex-direction: row;
+
+  width: var(--size1);
+
+  &__title {
+    font-size: var(--font2);
+    line-height: var(--ln-height);
+    color: var(--color1);
+
+    width: 31rem;
+    margin-left: 4rem;
+  }
 }
 
 .transition {
-  padding: 1rem 0rem;
-  width: 100rem;
-  background: #fc4444;
-  border-radius: 1.5rem;
-  font-size: 6rem;
-  line-height: 4rem;
-  color: #ebf2f8;
+  flex-direction: row;
   justify-content: space-around;
+
+  background: var(--color5);
+  line-height: var(--ln-height);
+  color: var(--color2);
+  width: var(--size2);
+
+  font-size: 6rem;
 }
 
-.earlierAugust {
-  flex-direction: column;
-  row-gap: 10rem;
+.beforeaugust {
+  &__content {
+    @include flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    column-gap: 10rem;
+  }
+
+  &__right {
+    max-width: 60rem;
+  }
+
+  &__right p {
+    margin-top: 2rem;
+  }
 }
 
-.titleBlueBar {
-  background-color: #10202b;
-  border-radius: 1rem;
-  width: 120rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.titlebar {
+  @include flex;
+  flex-direction: row;
 
-.content_earlierAugust {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 10rem;
-}
+  border-radius: var(--border1);
+  width: var(--size1);
 
-.right__content {
-  max-width: 60rem;
-  text-align: center;
-}
-
-.right__content p {
-  margin-top: 2rem;
+  background-color: var(--color1);
+  // background-color: var(--color3);
 }
 
 .august {
-  background-color: #ff9f9f;
-  flex-direction: column;
-  border-radius: 2rem;
-  row-gap: 10rem;
-  padding: 0rem 4rem 6rem 4rem;
-  text-align: center;
-}
+  background-color: var(--color6);
+  padding: var(--padding1);
 
-.august h3 {
-  color: #10202b;
-}
+  h3 {
+    color: var(--color1);
+  }
 
-.downContent__august {
-  display: flex;
-  column-gap: 2rem;
-  align-items: center;
+  &__downcontent {
+    @include flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .september {
-  flex-direction: column;
-  row-gap: 10rem;
-}
+  &__upcontent video {
+    margin-left: 20rem;
+  }
 
-.titlePinkBar {
-  background-color: #d90f0f;
-  border-radius: 1rem;
-  width: 120rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.upContent__september {
-  width: 120rem;
-  display: flex;
-  column-gap: 15rem;
-}
-
-.september p {
-  width: 100rem;
-  text-align: center;
+  p {
+    width: var(--size2);
+  }
 }
 
 .october {
-  flex-direction: column;
-  row-gap: 10rem;
+  background-color: var(--color4);
+  padding: var(--padding1);
 
-  background-color: #4a687c;
-  border-radius: 2rem;
+  div {
+    @include flex;
+    flex-direction: row;
+    column-gap: 10rem;
+  }
 
-  padding: 0rem 4rem 8rem 4rem;
-
-  text-align: center;
-}
-
-.october div {
-  display: flex;
-  align-items: center;
-  column-gap: 10rem;
-}
-
-.october p {
-  color: #ebf2f8;
-}
-
-.november {
-  flex-direction: column;
-  row-gap: 10rem;
+  p {
+    color: var(--color2);
+  }
 }
 
 .december {
-  flex-direction: column;
-  row-gap: 10rem;
-  background-color: #4a687c;
-  border-radius: 2rem;
-}
+  background-color: var(--color4);
 
-.downContent__december {
-  padding: 0rem 8rem 12rem 8rem;
-}
-
-.january {
-  flex-direction: column;
-  row-gap: 10rem;
-}
-
-.carousel__january {
-  width: 120rem;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10rem;
-  align-items: center;
-}
-
-.carousel__january h3 {
-  color: #10202b;
-}
-
-.contentBox__carouselCard {
-  display: flex;
-  align-items: center;
-  column-gap: 15rem;
-}
-
-.contentBox__carouselCard button {
-  background: transparent;
-  border-style: none;
+  &__downcontent {
+    padding: var(--padding1);
+  }
 }
 
 .fevMarAprMay {
-  flex-direction: column;
-  row-gap: 10rem;
-}
-
-.fevMarAprMay p {
-  width: 100rem;
-  text-align: center;
+  p {
+    width: var(--size2);
+  }
 }
 
 .june {
-  flex-direction: column;
-  row-gap: 10rem;
+  background: var(--color6);
+  padding: var(--padding1);
 
-  background: #ff9f9f;
-  border-radius: 2rem;
-  padding: 0rem 8rem 12rem 8rem;
-}
+  &__content {
+    @include flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    column-gap: 5rem;
+  }
 
-.june h3 {
-  color: #10202b;
-}
+  h3 {
+    color: var(--color1);
+  }
 
-.content__june {
-  display: flex;
-  align-items: center;
-  column-gap: 5rem;
-}
-
-.june p {
-  margin-top: 20rem;
-  text-align: center;
+  p {
+    margin-top: 20rem;
+  }
 }
 
 .july {
-  flex-direction: column;
-  row-gap: 10rem;
-}
-.july p {
-  text-align: center;
-  width: 100rem;
+  p {
+    width: var(--size2);
+  }
 }
 
-.heartMaster {
+.heartmaster {
+  @include flex;
+
   background-image: url('./assets/img11.png');
   background-repeat: no-repeat;
   background-position: center;
-
   width: 160rem;
   height: 140rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.heartMaster h3 {
-  font-size: 3.5rem;
-  line-height: 4rem;
-  color: #ebf2f8;
-  text-align: center;
-  width: 60rem;
-  margin-bottom: 5rem;
+  h3 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: var(--color2);
+    width: 60rem;
+    margin-bottom: 5rem;
+  }
 }
 
-.ourFuture {
-  flex-direction: column;
-  row-gap: 20rem;
-}
+.ourfuture {
+  row-gap: 15rem;
 
-.title__ourFuture {
-  color: #d90f0f;
-  font-size: 15rem;
-  text-align: center;
-}
+  &__title {
+    color: var(--color3);
 
-.btn__ourFuture {
-  width: 52rem;
-  height: 15rem;
-  border-style: none;
-  border-radius: 3rem;
-  background: #d90f0f;
-}
+    font-size: 15rem;
+  }
+  &__btn {
+    background: var(--color3);
 
-.btn__ourFuture h2 {
-  font-size: 5rem;
-  color: #ebf2f8;
+    width: 52rem;
+    height: 15rem;
+    border-style: none;
+    border-radius: 3rem;
+  }
+
+  &__btn h2 {
+    color: var(--color2);
+
+    font-size: 5rem;
+  }
 }
 
 footer {
-  display: flex;
+  @include flex;
+  flex-direction: row;
   justify-content: space-around;
-  align-items: center;
 
-  background: #fc4444;
-}
+  background: var(--color5);
 
-footer h2 {
-  color: #ebf2f8;
-  font-size: 3rem;
+  h2 {
+    color: var(--color2);
+    font-size: var(--font2);
+  }
 }
 </style>
