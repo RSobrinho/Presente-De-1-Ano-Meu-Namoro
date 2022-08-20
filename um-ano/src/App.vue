@@ -3,11 +3,11 @@
     <header class="header">
       <img src="./assets/logoHeart.png" alt="logoHeart" />
       <nav>
-        <button class="header__btndropdown">
+        <button class="header__btndropdown" @click="alert1">
           Nossos Meses :D
           <img src="./assets/iconDown.png" alt="iconDown" />
         </button>
-        <button class="header__btnlogin">Log In</button>
+        <button class="header__btnlogin" @click="alert2">Log In</button>
       </nav>
     </header>
     <main>
@@ -94,7 +94,7 @@
         <div class="september__downcontent">
           <p>
             Aqui começou a nossa vida de namorados, onde tudo parecia estar
-            dando errado, mas um tentava acalmar o outro pra ninguém surtar de
+            dando errado, mas um tentava acalmar o outro pra ninguém surtar se
             adequando as novas atividades, como responder o zapzap a cada 10
             minutos ao invés de 2 horas, e problemas fora do relacionamento, mas
             que afetavam a gente indiretamente. Nessa foto, foi a festa lá na
@@ -256,7 +256,16 @@ export default {
     }
   },
   methods: {
-    showContent() {}
+    alert1() {
+      window.alert(
+        'Resumindo, isso era para abrir todos os meses, e vc poderia escolher qual iria ver, mas deu canseira e n quis terminar n ;-;'
+      )
+    },
+    alert2() {
+      window.alert(
+        'Esse botao aqui eu criaria tipo um login, pra onde tipo, nos 2 poderiamos acessar, e sla o que teria nesse site p gnt, mas foi uma ideia na hora assim'
+      )
+    }
   }
 }
 </script>
@@ -411,11 +420,11 @@ button {
     margin-right: 5rem;
 
     &:hover {
-      background-color: #1c2b35;
+      background-color: #1d2b35;
     }
     &:focus {
       transition: 0.1s;
-      background-color: #0b283b;
+      background-color: #072a41;
     }
   }
 
