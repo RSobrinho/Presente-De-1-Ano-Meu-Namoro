@@ -4,13 +4,13 @@
       <h3>Dia {{ dia }} - Foto: {{ photo }} de {{ max }}</h3>
     </div>
     <div class="january__contentbox">
-      <button class="leftButton" @click="previousImg">
+      <button class="leftbutton" @click="previousImg">
         <img :src="require(`@/assets/${colorLeft}`)" alt="leftButton" />
       </button>
       <div class="content">
         <img :src="require(`@/assets/${folder}/${photo}.jpeg`)" alt="img" />
       </div>
-      <button class="rightButton" @click="nextImg">
+      <button class="rightbutton" @click="nextImg">
         <img :src="require(`@/assets/${colorRight}`)" alt="rightButton" />
       </button>
     </div>
@@ -69,4 +69,27 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.leftbutton img {
+  border-radius: 50%;
+  &:hover {
+    transition: 200ms;
+    filter: brightness(80%);
+  }
+  &:active {
+    filter: brightness(120%);
+  }
+}
+
+.rightbutton {
+  border-radius: 50%;
+
+  &:hover {
+    transition: 200ms;
+    filter: brightness(90%);
+  }
+  &:active {
+    filter: brightness(110%);
+  }
+}
+</style>

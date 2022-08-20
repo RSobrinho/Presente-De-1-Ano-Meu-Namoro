@@ -81,7 +81,7 @@
         </div>
       </section>
       <section class="september">
-        <div class="titlebar">
+        <div class="titlebar pink">
           <h3>Setembro, o primeiro de muitos meses</h3>
         </div>
         <div class="september__upcontent">
@@ -144,7 +144,7 @@
       </section>
       <january-comp />
       <section class="fevMarAprMay">
-        <div class="titlebar">
+        <div class="titlebar pink">
           <h3>Fevereiro, março, abril, maio: Pouca foto é foda kkkk</h3>
         </div>
         <div>
@@ -209,7 +209,7 @@
       <section class="heartmaster">
         <h3>
           Passou um ano inteiro, e nesse meio nós crescemos, melhoramos, nos
-          adaptamos, um com a ajuda do outro, mas parece que pssou 5 minutos
+          adaptamos, um com a ajuda do outro, mas parece que passou 5 minutos
           igual essa página da web kkkkkk, porém ainda temos muitas experiências
           para contruir juntos, e nesse caminho nos tornar felizes, um com o
           outro.
@@ -223,9 +223,15 @@
           <img src="./assets/img12.png" alt="imgs" />
         </div>
         <div>
-          <button class="ourfuture__btn">
+          <button class="ourfuture__btn" @click="click = !click">
             <h2>NÃO CLIQUE!</h2>
           </button>
+        </div>
+        <div class="ourfuture__gifofo" v-show="click == true">
+          <img
+            src="https://i.pinimg.com/originals/85/f2/53/85f2535cfdcfeaa0e815bb24c2fb13e0.gif"
+            alt="gifofo"
+          />
         </div>
       </section>
     </main>
@@ -243,6 +249,14 @@ export default {
   name: 'App',
   components: {
     JanuaryComp
+  },
+  data() {
+    return {
+      click: false
+    }
+  },
+  methods: {
+    showContent() {}
   }
 }
 </script>
@@ -365,6 +379,10 @@ section {
 
 button {
   box-shadow: 0px 0px 30px rgba(132, 132, 132, 0.2);
+
+  &:hover {
+    transition: 0.2s;
+  }
 }
 
 #app {
@@ -391,6 +409,14 @@ button {
 
     width: 30rem;
     margin-right: 5rem;
+
+    &:hover {
+      background-color: #1c2b35;
+    }
+    &:focus {
+      transition: 0.1s;
+      background-color: #0b283b;
+    }
   }
 
   &__btndropdown img {
@@ -404,6 +430,14 @@ button {
     color: var(--color1);
 
     width: 20rem;
+
+    &:hover {
+      background-color: #f35555;
+    }
+    &:active {
+      transition: 0.1s;
+      background-color: #f13a3a;
+    }
   }
 }
 
@@ -432,6 +466,11 @@ button {
   width: var(--size2);
 
   font-size: 6rem;
+
+  &:hover {
+    transition: 0.2s;
+    background: var(--color3);
+  }
 }
 
 .beforeaugust {
@@ -458,9 +497,21 @@ button {
 
   border-radius: var(--border1);
   width: var(--size1);
-
   background-color: var(--color1);
-  // background-color: var(--color3);
+
+  &:hover {
+    background-color: var(--color3);
+    transition: 200ms;
+  }
+}
+
+.pink {
+  background: var(--color3);
+
+  &:hover {
+    background-color: var(--color1);
+    transition: 200ms;
+  }
 }
 
 .august {
@@ -576,12 +627,25 @@ button {
     height: 15rem;
     border-style: none;
     border-radius: 3rem;
+
+    &:hover {
+      background: #df2d2d;
+    }
+
+    &:active {
+      transition: 1ms;
+      background: #ee0808;
+    }
   }
 
   &__btn h2 {
     color: var(--color2);
 
     font-size: 5rem;
+  }
+
+  &__gifofo img {
+    height: 90vh;
   }
 }
 
